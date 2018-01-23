@@ -1,0 +1,25 @@
+// Madlibs
+
+<script type="text/javascript">
+
+var companies = ["Kayak", "Lyft", "Google", "Apple", "Tinder", "Tinder"];
+
+var animals = ["Aardvark","Blue Footed Booby","Flying Dragon","Giraffe Weevil","Hammerhead Slug","Komodo Dragon","Naked Mole Rat","Okapi","Red Panda"]
+
+var vowels = ["A", "E", "I", "O", "U"];
+
+for ( var i = 0; i < 5; i++){
+	 var companyName =
+	 	companies[Math.floor(Math.random()*companies.length)];
+
+	 		var firstletter = companyName.charAt(0);
+	 			console.log("My company is a" +
+	 			((vowels.indexOf(firstletter)> -1 ? "n " : " ") +
+	 				companyName + " for " +
+	 				animals[Math.floor(Math.random()*animals.length)] +"s!"
+	 			));
+}
+
+
+
+</script>
